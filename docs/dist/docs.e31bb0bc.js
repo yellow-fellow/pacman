@@ -627,6 +627,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Classes
 // Sounds
 // DOM Elements
+console.log("hello world");
 var gameGrid = document.querySelector("#game");
 var scoreTable = document.querySelector("#score");
 var startButton = document.querySelector("#start-button"); // Game Constants
@@ -767,7 +768,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63409" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63573" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

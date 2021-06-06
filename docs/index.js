@@ -13,6 +13,8 @@ import soundGhost from "./sounds/eat_ghost.wav";
 
 // DOM Elements
 
+console.log("hello world");
+
 const gameGrid = document.querySelector("#game");
 const scoreTable = document.querySelector("#score");
 const startButton = document.querySelector("#start-button");
