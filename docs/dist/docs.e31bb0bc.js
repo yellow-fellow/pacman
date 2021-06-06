@@ -180,7 +180,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.randomMovement = randomMovement;
 
-var _setup = require("./setup");
+var _setup = require("./setup.js");
 
 function randomMovement(position, direction, objectExist) {
   var dir = direction;
@@ -198,7 +198,7 @@ function randomMovement(position, direction, objectExist) {
     direction: dir
   };
 }
-},{"./setup":"setup.js"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
+},{"./setup.js":"setup.js"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
@@ -316,7 +316,7 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
 
-var _setup = require("./setup");
+var _setup = require("./setup.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -418,7 +418,7 @@ var GameBoard = /*#__PURE__*/function () {
 
 var _default = GameBoard;
 exports.default = _default;
-},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","./setup":"setup.js"}],"Pacman.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","./setup.js":"setup.js"}],"Pacman.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -430,7 +430,7 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var _setup = require("./setup");
+var _setup = require("./setup.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -507,7 +507,7 @@ var Pacman = /*#__PURE__*/function () {
 
 var _default = Pacman;
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","./setup":"setup.js"}],"Ghost.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","./setup.js":"setup.js"}],"Ghost.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -521,7 +521,7 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var _setup = require("./setup");
+var _setup = require("./setup.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -589,43 +589,28 @@ var Ghost = /*#__PURE__*/function () {
 
 var _default = Ghost;
 exports.default = _default;
-},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","./setup":"setup.js"}],"sounds/munch.wav":[function(require,module,exports) {
-module.exports = "/munch.50161df6.wav";
-},{}],"sounds/pill.wav":[function(require,module,exports) {
-module.exports = "/pill.d5173a33.wav";
-},{}],"sounds/game_start.wav":[function(require,module,exports) {
-module.exports = "/game_start.09b402f7.wav";
-},{}],"sounds/death.wav":[function(require,module,exports) {
-module.exports = "/death.1b6386ba.wav";
-},{}],"sounds/eat_ghost.wav":[function(require,module,exports) {
-module.exports = "/eat_ghost.09613325.wav";
-},{}],"index.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","./setup.js":"setup.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _setup = require("./setup");
+var _setup = require("./setup.js");
 
-var _ghostMoves = require("./ghostMoves");
+var _ghostMoves = require("./ghostMoves.js");
 
-var _GameBoard = _interopRequireDefault(require("./GameBoard"));
+var _GameBoard = _interopRequireDefault(require("./GameBoard.js"));
 
-var _Pacman = _interopRequireDefault(require("./Pacman"));
+var _Pacman = _interopRequireDefault(require("./Pacman.js"));
 
-var _Ghost = _interopRequireDefault(require("./Ghost"));
-
-var _munch = _interopRequireDefault(require("./sounds/munch.wav"));
-
-var _pill = _interopRequireDefault(require("./sounds/pill.wav"));
-
-var _game_start = _interopRequireDefault(require("./sounds/game_start.wav"));
-
-var _death = _interopRequireDefault(require("./sounds/death.wav"));
-
-var _eat_ghost = _interopRequireDefault(require("./sounds/eat_ghost.wav"));
+var _Ghost = _interopRequireDefault(require("./Ghost.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Classes
 // Sounds
+// import soundDot from "./sounds/munch.wav";
+// import soundPill from "./sounds/pill.wav";
+// import soundGameStart from "./sounds/game_start.wav";
+// import soundGameOver from "./sounds/death.wav";
+// import soundGhost from "./sounds/eat_ghost.wav";
 // DOM Elements
 console.log("hello world");
 var gameGrid = document.querySelector("#game");
@@ -643,15 +628,13 @@ var score = 0;
 var timer = null;
 var gameWin = false;
 var powerPillActive = false;
-var powerPillTimer = null;
-
-function playAudio(audio) {
-  var soundEffect = new Audio(audio);
-  soundEffect.play();
-}
+var powerPillTimer = null; // function playAudio(audio) {
+//   const soundEffect = new Audio(audio);
+//   soundEffect.play();
+// }
 
 function gameOver(pacman, grid) {
-  playAudio(_death.default);
+  // playAudio(soundGameOver);
   document.removeEventListener("keydown", function (e) {
     return pacman.handleKeyInput(e, gameBoard.objectExist.bind(gameBoard));
   });
@@ -667,7 +650,7 @@ function checkCollision(pacman, ghosts) {
 
   if (collidedGhost) {
     if (pacman.powerPill) {
-      playAudio(_eat_ghost.default);
+      // playAudio(soundGhost);
       gameBoard.removeObject(collidedGhost.pos, [_setup.OBJECT_TYPE.GHOST, _setup.OBJECT_TYPE.SCARED, collidedGhost.name]);
       collidedGhost.pos = collidedGhost.startPos;
       score += 100;
@@ -688,14 +671,14 @@ function gameLoop(pacman, ghosts) {
   checkCollision(pacman, ghosts);
 
   if (gameBoard.objectExist(pacman.pos, _setup.OBJECT_TYPE.DOT)) {
-    playAudio(_munch.default);
+    // playAudio(soundDot);
     gameBoard.removeObject(pacman.pos, [_setup.OBJECT_TYPE.DOT]);
     gameBoard.dotCount--;
     score += 10;
   }
 
   if (gameBoard.objectExist(pacman.pos, _setup.OBJECT_TYPE.PILL)) {
-    playAudio(_pill.default);
+    // playAudio(soundPill);
     gameBoard.removeObject(pacman.pos, [_setup.OBJECT_TYPE.PILL]);
     pacman.powerPill = true;
     score += 50;
@@ -721,7 +704,7 @@ function gameLoop(pacman, ghosts) {
 }
 
 function startGame() {
-  playAudio(_game_start.default);
+  // playAudio(soundGameStart);
   gameWin = false;
   powerPillActive = false;
   score = 0;
@@ -740,7 +723,7 @@ function startGame() {
 
 
 startButton.addEventListener("click", startGame);
-},{"./setup":"setup.js","./ghostMoves":"ghostMoves.js","./GameBoard":"GameBoard.js","./Pacman":"Pacman.js","./Ghost":"Ghost.js","./sounds/munch.wav":"sounds/munch.wav","./sounds/pill.wav":"sounds/pill.wav","./sounds/game_start.wav":"sounds/game_start.wav","./sounds/death.wav":"sounds/death.wav","./sounds/eat_ghost.wav":"sounds/eat_ghost.wav"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./setup.js":"setup.js","./ghostMoves.js":"ghostMoves.js","./GameBoard.js":"GameBoard.js","./Pacman.js":"Pacman.js","./Ghost.js":"Ghost.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
